@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.menu{
+  display: flex;
+  float: left;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  width: 50%;
+  font: 1.2em
+
+}
+
+header{
+  text-align: center;
+  
+}
+
+.logo > img {
+  width: 50px;
+  float: left;
+  margin-left: 60px;
+}
+
+.navbar{
+  clear: both;
+  display: flex;
+  background-color: grey;
+  justify-content: flex-end;
+  
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.product{
+  text-align: center;
+  
+  width: 25%;
+  height: 290px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  padding: 20px;
+
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+
+}
+
+@media(max-width: 480px){
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+  }
+  .product{
+    width: 80%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+}
+
+@media(min-width: 481px) and (max-width: 767px){
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .product{
+    width: 80%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .menu{
+    display: none;
+  }
+
+}
+
+@media(min-width: 768px) and (max-width: 1024px){
+  main{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+  }
+  .product{
+    width: 80%;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .menu{
+    display: none;
+  }
+
+}
+
+@media(min-width: 1025px) and (max-width: 1280px){
+  .hamburger{
+    display: none;
+  }
+
+  main{
+    font-size: 14px;
+  }
+}
+
+@media(min-width: 1281px){
+  .hamburger{
+    display: none;
+  }
+}
